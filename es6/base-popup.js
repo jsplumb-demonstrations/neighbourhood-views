@@ -72,7 +72,7 @@ export class BasePopup {
             tags:{
                 formula: formulaTag
             },
-            dataSource:this.selection,
+            selection:this.selection,
             view:generateView(toolkit, (p) => surface.centerOn(p)),
             defaults:{
                 anchor:[AnchorLocations.Bottom, AnchorLocations.Top],
