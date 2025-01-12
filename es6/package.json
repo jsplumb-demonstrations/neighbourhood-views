@@ -1,8 +1,6 @@
 {
     "name": "neighbourhood-views-es6",
-    "version": "6.81.0",
-    "description": "",
-    "main": "demo.js",
+    "version": "6.90.0",
     "scripts": {
         "build-es6": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
         "build-es6-min": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --minify --format=iife --outfile=bundle-min.js",
@@ -11,10 +9,9 @@
         "build": "npm run build-es6;npm run transpile-es5",
         "build-min": "npm run build-es6-min;npm run transpile-es5-min",
         "dev": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js --watch",
-        "serve": "./node_modules/.bin/http-server .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "serve": "./node_modules/.bin/http-server ."
     },
-    "author": "jsPlumb <hello@jsplumbtoolkit.com> (https://jsplumbtoolkit.com/)",
+    "author": "JsPlumb <hello@jsplumbtoolkit.com> (https://jsplumbtoolkit.com/)",
     "license": "ISC",
     "devDependencies": {
         "babel-cli": "^6.26.0",
@@ -23,6 +20,6 @@
         "http-server": "^14.1.1"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui": "^6.81.0"
+        "@jsplumbtoolkit/browser-ui": "^6.90.0"
     }
 }
