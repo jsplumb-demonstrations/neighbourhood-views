@@ -36,9 +36,9 @@ ready(() => {
             formula:formulaTag
         },
         view:generateView(tk),
+        elementsDraggable:false,
         defaults:{
             anchor:[AnchorLocations.Bottom, AnchorLocations.Top],
-            endpoint:BlankEndpoint.type,
             connector:{
                 type:SegmentedConnector.type,
                 options:{
