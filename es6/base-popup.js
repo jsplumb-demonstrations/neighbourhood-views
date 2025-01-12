@@ -64,6 +64,10 @@ export class BasePopup {
             this.refresh()
         })
 
+        /**
+         * Each popup renders a Selection from the dataset instead of the entire dataset. Subclasses of this class provide
+         * the `generator()` method, which returns a function that generates the selection's contents when the Toolkit requests it.
+         */
         this.selection = new Selection(toolkit, {
             generator:this.generator()
         })
@@ -77,6 +81,7 @@ export class BasePopup {
             defaults:{
                 anchor:[AnchorLocations.Bottom, AnchorLocations.Top]
             },
+            // subclasses specify the layout to use.
             layout:this.getLayout(),
             wheel:{
                 zoom:false
