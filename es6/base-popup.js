@@ -75,14 +75,14 @@ export class BasePopup {
             selection:this.selection,
             view:generateView(toolkit, (p) => surface.centerOn(p)),
             defaults:{
-                anchor:[AnchorLocations.Bottom, AnchorLocations.Top],
-                endpoint:BlankEndpoint.type
+                anchor:[AnchorLocations.Bottom, AnchorLocations.Top]
             },
             layout:this.getLayout(),
             wheel:{
                 zoom:false
             },
-            enablePan:false
+            enablePan:false,
+            elementsDraggable:false
 
         })
     }
