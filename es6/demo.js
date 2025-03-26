@@ -1,5 +1,5 @@
 import {
-    SegmentedConnector,
+    StraightConnector,
     ready,
     newInstance,
     HierarchyLayout,
@@ -40,7 +40,7 @@ ready(() => {
         defaults:{
             anchor:[AnchorLocations.Bottom, AnchorLocations.Top],
             connector:{
-                type:SegmentedConnector.type,
+                type:StraightConnector.type,
                 options:{
                     stub:10
                 }

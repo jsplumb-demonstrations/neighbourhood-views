@@ -27,16 +27,11 @@ export class BasePopup {
     childObjects = []
     siblingObjects = []
 
-    constructor(toolkit, surface, {el, toggle}) {
+    constructor(toolkit, surface, {el}) {
         this.toolkit = toolkit
         this.container = el
-        this.toggle = toggle
 
-        surface.on(el.querySelector(".title"), EVENT_TAP, () => {
-            this.setVisible(!this.visible)
-        })
-
-        surface.on(toggle, EVENT_CLICK, () => {
+        surface.on(el.querySelector(".toggle"), EVENT_TAP, () => {
             this.setVisible(!this.visible)
         })
 
@@ -94,7 +89,7 @@ export class BasePopup {
 
     setVisible(state) {
         this.visible = state
-        this.toggle.setAttribute("data-hidden", !state)
+        this.container.setAttribute("data-hidden", !state)
         const height = state ? "350px" : "40px"
         this.container.animate({
             height:height
