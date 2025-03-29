@@ -1,6 +1,6 @@
 {
     "name": "neighbourhood-views-es6",
-    "version": "6.90.0",
+    "version": "7.0.0",
     "scripts": {
         "build-es6": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
         "build-es6-min": "./node_modules/.bin/esbuild demo.js --target=es2016 --bundle --minify --format=iife --outfile=bundle-min.js",
@@ -20,6 +20,6 @@
         "http-server": "^14.1.1"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui": "^6.90.0"
+        "@jsplumbtoolkit/browser-ui": "^7.0.0"
     }
 }
